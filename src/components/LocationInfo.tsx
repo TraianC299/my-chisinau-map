@@ -6,6 +6,7 @@ import { MdClose } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import CircleButton from './CircleButton';
 import ImageCarousel from './ImageCarousel';
+import { FaInstagram } from 'react-icons/fa';
 const LocationInfo = () => {
     const dispatch = useDispatch();
     const locationShortCode = useSelector((state: any) => state.map.selectedBuilding);
@@ -30,7 +31,7 @@ const LocationInfo = () => {
                 </CircleButton>
                 <ImageCarousel images={location?.images as string[]} altTitle={location?.title || 'Location Image'} />
                 <div className='p-4'>
-                    <h3 className="font-bold text-lg text-gray-800 mt-4">{location?.title}</h3>
+                    <h3 className="font-bold text-lg text-gray-800">{location?.title}</h3>
                     <p className="text-sm text-gray-600 mt-1">
                         {location?.location?.address}
                     </p>
@@ -46,10 +47,10 @@ const LocationInfo = () => {
                         href={`https://www.instagram.com/p/${location?.shortcode}/`}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className='w-full bg-[#5497e8] hover:opacity-80 text-white font-bold pointer-events-auto py-2 px-4 rounded-md shadow-md transition flex justify-center items-center gap-2'
                     >
-                        <button className='w-full bg-pink-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md shadow-md transition'>
-                            View on Instagram &rarr;
-                        </button>
+                            Vezi postarea pe Instagram 
+                            <FaInstagram color="white" size={24} />
                     </a>
                 </div>
             </div>

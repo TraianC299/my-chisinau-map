@@ -2,9 +2,9 @@ import React from 'react'
 
 
 const styles = {
-    white: 'bg-white text-black hover:bg-gray-100 border border-gray-200',
-    black: 'bg-black text-white hover:bg-gray-800',
-    'half-transparent': 'bg-black/50 text-white hover:bg-black/70',
+    white: 'bg-white text-black hover:opacity-80 border border-gray-200',
+    black: 'bg-black text-white hover:opacity-80',
+    'half-transparent': 'bg-black/50 text-white hover:opacity-80',
 };
 const CircleButton = ({
     onClick,
