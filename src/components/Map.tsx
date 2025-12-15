@@ -28,10 +28,10 @@ const redIcon = new L.Icon({
 
 // --- Limitele Hărții (Chișinău) ---
 // Definim colțul Sud-Vest și Nord-Est al orașului
-const chisinauBounds: L.LatLngBoundsExpression = [
-    [46.9400, 28.7000], // Sud-Vest
-    [47.1000, 29.0000]  // Nord-Est
-];
+// const chisinauBounds: L.LatLngBoundsExpression = [
+//     [46.9400, 28.7000], // Sud-Vest
+//     [47.1000, 29.0000]  // Nord-Est
+// ];
 
 const center: [number, number] = [47.0226, 28.8347];
 
@@ -52,7 +52,7 @@ export default function Map() {
                 center={center}
                 zoom={14} // Un zoom inițial puțin mai larg pentru a vedea contextul
                 minZoom={15} // Nu permite zoom-out mai mult de nivelul cartierelor
-                maxBounds={chisinauBounds} // Limitează navigarea doar în acest dreptunghi
+                // maxBounds={chisinauBounds} // Limitează navigarea doar în acest dreptunghi
                 maxBoundsViscosity={1.0} // Face limita rigidă (harta se oprește instant la margine)
                 style={{ height: '100vh', width: '100vw' }}
                 zoomControl={false}

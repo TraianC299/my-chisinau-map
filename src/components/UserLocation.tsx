@@ -30,13 +30,11 @@ function UserLocation() {
   return (
     <>
       {/* The Button placed on top of the map */}
-      <CircleButton
-        onClick={handleLocate}
-        className="absolute top-4 right-4 z-[1000]"
-        // al="Locate Me"
-      >
-        <MdLocationPin size={24} />
-      </CircleButton>
+
+      <button className="absolute top-4 right-4 z-10000 bg-black p-4 py-2 pointer-events-auto rounded-full flex items-center gap-2 shadow-lg hover:opacity-80 transition-shadow duration-300" target="_blank" rel="noopener noreferrer">
+                  <p className="text-sm font-bold text-white">Locația mea</p>
+                    <MdLocationPin color="white" size={24} />
+              </button>
 
       {/* The User's Location Marker (Blue Dot) */}
       {position && (
