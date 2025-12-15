@@ -2,7 +2,7 @@
 
 import L from 'leaflet';
 import { useEffect, useState } from 'react';
-import { MdLocationPin } from 'react-icons/md';
+import { MdOutlineLocationOn } from 'react-icons/md';
 import { CircleMarker, Popup, useMap } from 'react-leaflet';
 
 function UserLocation() {
@@ -35,7 +35,7 @@ function UserLocation() {
 
         className="absolute top-4 right-4 z-10000 bg-black p-4 py-2 pointer-events-auto rounded-full flex items-center gap-2 shadow-lg hover:opacity-80 transition-shadow duration-300">
         <p className="text-sm font-bold text-white">Locația mea</p>
-        <MdLocationPin color="white" size={24} />
+        <MdOutlineLocationOn color="white" size={24} />
       </button>
 
       {/* The User's Location Marker (Blue Dot) */}

@@ -92,7 +92,7 @@ export default function ImageCarousel({ images, altTitle }: ImageCarouselProps) 
               type='half-transparent'
               className="rounded-full transition opacity-100 md:opacity-0 md:group-hover:opacity-100"
             >
-              <MdChevronLeft size={30} />
+              <MdChevronLeft size={24} />
             </CircleButton>
         </div>
       )}
@@ -105,7 +105,7 @@ export default function ImageCarousel({ images, altTitle }: ImageCarouselProps) 
               type='half-transparent'
               className="rounded-full transition opacity-100 md:opacity-0 md:group-hover:opacity-100"
             >
-              <MdChevronRight size={30}  />
+              <MdChevronRight size={24}  />
             </CircleButton>
         </div>
       )}

@@ -1,20 +1,11 @@
+import { HistoricalBuilding } from '@/types/types';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 // Define the shape of a Building based on your JSON
-export interface Building {
-  shortcode: string;
-  title: string;
-  description: string;
-  imageUrl: string;
-  location: {
-    lat: number;
-    lng: number;
-    address: string;
-  };
-}
+
 
 interface MapState {
-  selectedBuilding: Building['shortcode'] | null;
+  selectedBuilding: HistoricalBuilding['shortcode'] | null;
 }
 
 const initialState: MapState = {
@@ -26,7 +17,7 @@ export const mapSlice = createSlice({
   initialState,
   reducers: {
     // This action will save the building to the global state
-    setSelectedBuilding: (state, action: PayloadAction<Building['shortcode'] | null>) => {
+    setSelectedBuilding: (state, action: PayloadAction<HistoricalBuilding['shortcode'] | null>) => {
       state.selectedBuilding = action.payload;
     },
   },
