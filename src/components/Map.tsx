@@ -50,8 +50,7 @@ export default function Map() {
         <div className="w-full h-full rounded-xl z-0 overflow-hidden shadow-lg border-2 border-gray-200">
             <MapContainer
                 center={center}
-                zoom={14} // Un zoom inițial puțin mai larg pentru a vedea contextul
-                minZoom={15} // Nu permite zoom-out mai mult de nivelul cartierelor
+                zoom={16} // Un zoom inițial puțin mai larg pentru a vedea contextul
                 // maxBounds={chisinauBounds} // Limitează navigarea doar în acest dreptunghi
                 maxBoundsViscosity={1.0} // Face limita rigidă (harta se oprește instant la margine)
                 style={{ height: '100vh', width: '100vw' }}

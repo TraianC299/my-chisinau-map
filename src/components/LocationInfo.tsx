@@ -65,7 +65,7 @@ const LocationInfo = () => {
                     href={`https://www.instagram.com/p/${location?.shortcode}/`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className='w-full bg-[#5497e8] hover:opacity-80 text-white font-bold pointer-events-auto py-2 px-4 rounded-md shadow-md transition flex justify-center items-center gap-2'
+                    className='w-full bg-[#5497e8] hover:opacity-80 text-white font-bold pointer-events-auto py-2 px-4 rounded-full shadow-md transition flex justify-center items-center gap-2'
                 >
                     Vezi postarea pe Instagram
                     <FaInstagram color="white" size={24} />
