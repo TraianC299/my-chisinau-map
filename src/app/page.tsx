@@ -21,7 +21,7 @@ export default function Home() {
         <Map/>
         <LocationInfo/>
         <a href="https://www.instagram.com/trecut_prezent_md/"  className="fixed bottom-4 right-4 z-10000 bg-white p-4 py-2 pointer-events-auto rounded-full flex items-center gap-2 shadow-lg hover:opacity-80 transition-shadow duration-300" target="_blank" rel="noopener noreferrer">
-            <p className="text-sm font-bold">trecut_prezent_md</p>
+            <p className="text-sm font-bold text-black">trecut_prezent_md</p>
             <div className="p-0.5 rounded-lg instagram-bg">
               <FaInstagram className="instagram-bg rounded-2xl" color="white" size={24} />
             </div>
